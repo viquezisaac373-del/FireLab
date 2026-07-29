@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://c78s3kslx1gxl"]
+
+[ext_resource type="PackedScene" uid="uid://d3c3fo7slrerm" path="res://scenes/main/tree.tscn" id="1_hyk8p"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_qhxmq"]
+size = Vector2(20, 20)
+
+[node name="Main" type="Node3D" unique_id=117829898]
+
+[node name="Ground" type="MeshInstance3D" parent="." unique_id=1594017955]
+mesh = SubResource("PlaneMesh_qhxmq")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1024332846]
+transform = Transform3D(1, 0, 0, 0, 0.70710677, 0.70710677, 0, -0.70710677, 0.70710677, 0, 0, 0)
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1350560093]
+transform = Transform3D(1, 0, 0, 0, 0.8660254, 0.5, 0, -0.5, 0.8660254, 0, 8, 10)
+
+[node name="Tree" parent="." unique_id=1411290194 instance=ExtResource("1_hyk8p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3648539, 0, 2.612382)
+
+[node name="Tree2" parent="." unique_id=94648191 instance=ExtResource("1_hyk8p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4829173, 0, 5.031403)
+
+[node name="Tree3" parent="." unique_id=404538343 instance=ExtResource("1_hyk8p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4205744, 0, 5.2218065)
+
+[node name="Tree4" parent="." unique_id=427184056 instance=ExtResource("1_hyk8p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4733286, 0, 2.5290747)
+
+[node name="Tree5" parent="." unique_id=1792582763 instance=ExtResource("1_hyk8p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.2483034, 4.7683716e-07, 2.5534897)
+
+[node name="Tree6" parent="." unique_id=165570880 instance=ExtResource("1_hyk8p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.174739, 0, 4.9579344)
+
+[node name="Tree7" parent="." unique_id=72619050 instance=ExtResource("1_hyk8p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.2161613, 0, 3.0091925)
+
+[node name="Tree8" parent="." unique_id=1587777302 instance=ExtResource("1_hyk8p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.1915984, 0, 5.0106163)
